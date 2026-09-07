@@ -1,4 +1,4 @@
-movies = [{
+const movies = [{
     id: 1,
     title: "Le pagine della nostra vita",
     year: 2004,
@@ -23,3 +23,5 @@ movies = [{
     watched: false,
 },
 ]
+
+export default movies;
