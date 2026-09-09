@@ -6,15 +6,21 @@
 // Aggiungi anche un badge con il genere, mostrato solo se il film ha effettivamente un genere impostato (operatore &&).
 
 import MovieCard from './MovieCard'
-import movies from '../data/movies'
+import { movies }  from '../data/movies' 
 
-export default function MovieList({movies}){
+export default function MovieList({}){
     return(
         <>
         {movies.map((movie) => (
 
-            <MovieCard key={movie.id}>
-                </MovieCard>
+            <MovieCard 
+            key={movie.id}
+            title={movie.title}
+            year={movie.year}
+            poster={movie.poster}
+            genre={movie.genre}
+            isWatched={movie.isWatched}
+            />
         ))}
 
         </>
