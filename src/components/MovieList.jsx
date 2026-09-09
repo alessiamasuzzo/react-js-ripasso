@@ -6,9 +6,8 @@
 // Aggiungi anche un badge con il genere, mostrato solo se il film ha effettivamente un genere impostato (operatore &&).
 
 import MovieCard from './MovieCard'
-import { movies }  from '../data/movies' 
 
-export default function MovieList({}){
+export default function MovieList({movies, onFavoriteClick}){
     return(
         <>
         {movies.map((movie) => (
@@ -20,8 +19,9 @@ export default function MovieList({}){
             poster={movie.poster}
             genre={movie.genre}
             isWatched={movie.isWatched}
-            />
-        ))}
+            onFavoriteClick={onFavoriteClick}>
+            </MovieCard>
+    ))} 
 
         </>
 

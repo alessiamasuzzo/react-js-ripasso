@@ -14,6 +14,7 @@ export const movies = [{
     poster: "https://image.tmdb.org/t/p/original/2ftj0Q2r8WnwFPEdrxeL7x8NNzq.jpg",
     genre: "",
     isWatched: true,
+    favorite: false,
 },
 {
     id: 2,
@@ -22,6 +23,7 @@ export const movies = [{
     poster: "https://www.odeonline.it/app/uploads/2024/05/7a9e7935-a7e3-4856-9466-8852ae70277c.jpg",
     genre: "Fantasia",
     isWatched: true,
+    favorite: false,
 },
 {
     id: 3,
@@ -30,5 +32,6 @@ export const movies = [{
     poster: "https://pad.mymovies.it/filmclub/2001/12/005/imm.jpg",
     genre: "Fantasia",
     isWatched: false,
+    favorite: false,
 },
 ]
