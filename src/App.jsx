@@ -12,9 +12,8 @@ import MovieList from './components/MovieList'
 function App() {
   const [ movies, setMovies ] = useState(initialMovies)
 
-  function onFavoriteClick(id){
-    setMovies((movies) => movies.map(movie))
-  }
+  function onFavoriteClick(targetId){
+    setMovies((movies) => movies.map((movie) => (movie.id === targetId ? {...movie, favorite: !movie.favorite} : movie)))}
 
   return (
     <>

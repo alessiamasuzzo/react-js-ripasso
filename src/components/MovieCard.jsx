@@ -4,7 +4,7 @@
 // In MovieCard, mostra condizionalmente una scritta "✅ Visto" oppure "
 // 👀 Da vedere" in base alla prop watched, usando l'operatore ternario;
 // Aggiungi anche un badge con il genere, mostrato solo se il film ha effettivamente un genere impostato (operatore &&).
-export default function MovieCard({title, year, poster, genre, isWatched, onFavoriteClick, id}){
+export default function MovieCard({title, year, poster, genre, isWatched, onFavoriteClick, targetId}){
     return(
         <>
         <article> 
@@ -16,7 +16,7 @@ export default function MovieCard({title, year, poster, genre, isWatched, onFavo
             {/* se il film contiene il genere, mostrarlo altrimenti no */}
             {genre && <p>{genre}</p>}
              {/* aggiungo il bottone preferito */}
-            <button onClick={() => onFavoriteClick(id)}> Prefe </button>
+            <button onClick={() => onFavoriteClick(targetId)}> Prefe </button>
         </article>
         </>
     )
